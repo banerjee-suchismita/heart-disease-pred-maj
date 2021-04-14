@@ -1,0 +1,25 @@
+.example-container {
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    min-height: 93vh !important;
+    display: block !important;
+    background: #eee;
+  }
+
+  .chartIndex{
+    width: 15vh;
+    height: 15vh !important;
+  }
+  
+.mat-line{
+  margin: 0 auto !important;
+  font-size: medium !important;
+}
+
+.mat-list-item{
+  border: 1px solid gainsboro;
+}

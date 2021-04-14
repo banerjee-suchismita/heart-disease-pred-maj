@@ -1,0 +1,236 @@
+<div *ngIf="predict === 1">
+  <div class="header">
+    <img class="header-image" src="../../assets/img/yes-doctor.svg" />
+    <div class="header-text">
+      <h2 style="color: #b12203">
+        You have high chances of heart disease. Consult a doctor immediately!
+      </h2>
+      <h3>
+        Heart disease is the No. 1 cause of death worldwide, and it's mostly
+        preventable by changing your lifestyle and managing risk factors.
+      </h3>
+    </div>
+    <div>
+      <img class="header-image" src="../../assets/img/qr.png" />
+      <p>Scan the QR to know more</p>
+    </div>
+  </div>
+
+  <mat-grid-list
+    cols="5"
+    rowHeight="50vh"
+    style="margin-bottom: 10vh"
+    [gutterSize]="'1vw'"
+  >
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="get-moving-image"></div>
+          <mat-card-title class="title">Get moving!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Your heart is a muscle and, as with any muscle, exercise is what
+            strengthens it. The first step is to determine your target heart
+            rate, then find an activity you enjoy and can stick with for the
+            long run. Tag along your friends anf family and stay fit together!
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="smoking-image"></div>
+          <mat-card-title class="title">Quit smoking!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Quitting smoking is tough. But you know that it's important to quit,
+            and one of the biggest reasons is that it's linked to heart disease.
+            <br />
+            - Plan to quit <br />
+            - See yourself as a nonsmoker <br />
+            - Consider nicotine replacement therapy
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="weight-image"></div>
+          <mat-card-title class="title">Lose weight!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Doctors say, Losing weight is more than just diet and exercise. It's
+            a personal journey that involves finding what you like and what
+            works for you. Consider loosing weight by Dieting, Avoid restaurant
+            food, Make daily exercise normal (use exercise apps for help) and
+            recording food diaries.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="stress-image"></div>
+          <mat-card-title class="title">Don't stress!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            If you don't manage your stress, it can create more stress and trap
+            you in a stress cycle. Not worrying about your stress helps relieve
+            it! Alternatively, practicing Acupuncture, Tai chi, Yoga and
+            Meditation can help manage stress levels greatly.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="overeat-image"></div>
+          <mat-card-title class="title">Don't overeat!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Eating a lot of food at once leads to:
+            <br />- Blood shifting from the heart to the digestive system
+            <br />- Faster and irregular heart rhythms, which can lead to heart
+            attack or heart failure
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<div *ngIf="predict === 0">
+  <div class="header">
+    <img class="header-image" src="../../assets/img/no-healthy.svg" />
+    <div class="header-text">
+      <h2 style="color: green">
+        Congratulations! You have very low chances of having heart disease. Stay
+        healthy!
+      </h2>
+      <h3>
+        Heart disease is the No. 1 cause of death worldwide, and it's mostly
+        preventable by changing your lifestyle and managing risk factors.
+      </h3>
+    </div>
+    <img class="header-image" src="../../assets/img/healthy-2.svg" />
+  </div>
+
+  <mat-grid-list
+    cols="5"
+    rowHeight="60vh"
+    style="margin-bottom: 10vh"
+    [gutterSize]="'1vw'"
+  >
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="sleep-image"></div>
+          <mat-card-title class="title"
+            >Get enough regular sleep each night!</mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Your heart is significantly impacted when your body doesn’t get
+            enough sleep. Just as your body needs rest, so does your heart. Most
+            people need six to eight hours of sleep each day. If you’re having
+            problems falling or staying asleep, talk to your doctor to rule out
+            medical causes of insomnia.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="weight-image"></div>
+          <mat-card-title class="title"
+            >Work on losing weight if you need to!</mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Carrying around too much weight puts you at a higher risk for many
+            health problems, including heart disease. Come up with a smart and
+            realistic weight loss plan, stick to it, and most importantly, and
+            then create a vigilant maintenance plan so you won’t have to go
+            through the process all over again.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="bp-image"></div>
+          <mat-card-title class="title">
+            Keep your blood pressure in check!</mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            High blood pressure is a major risk factor when it comes to heart
+            disease. If you can keep your blood pressure within a healthy range,
+            that will reduce strain on your heart and arteries. Regular exercise
+            and a healthy diet will help keep your blood pressure in check.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="eat-image"></div>
+          <mat-card-title class="title"
+            >Keep your diet in balance!</mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Meals aren’t just fuel. Food can be medicine. Eating right for your
+            heart means building meals on a foundation of whole grains, fruits
+            and veggies, adding low-fat dairy, poultry, fish and nuts to round
+            out your diet. Limit or avoid red meat, processed foods and foods
+            high in sodium. Also, remember to drink plenty of fluids every day.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="exercise-image"></div>
+          <mat-card-title class="title"
+            >Make exercise a regular part of your life!</mat-card-title
+          >
+        </mat-card-header>
+        <mat-card-content class="content">
+          <p>
+            Heart is a muscle, and just like pecs or abs, it needs to be worked
+            out consistently to stay strong. Doing aerobic exercise most days of
+            the week for 30 to 60 minutes will help keep your heart working as
+            efficiently as possible. If you’re looking to lose some weight, add
+            some light weight training for an additional metabolic kick.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

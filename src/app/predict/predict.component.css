@@ -1,0 +1,155 @@
+.header {
+  width: 100%;
+  height: 35vh;
+  background-color: whitesmoke;
+  margin-bottom: 5vh;
+  text-align: center;
+  margin-top: 5vh;
+  color: #11806d;
+  display: flex;
+  vertical-align: middle;
+  flex-direction: row;
+}
+
+.header-text {
+  white-space: normal;
+  line-height: 100%;
+  margin: 10vh 0vw;
+  width: 70vw;
+}
+
+.header-image {
+  height: 30vh;
+  width: 50%;
+  padding-top: 2vh;
+}
+
+/* .header-image-exp {
+    height: 44vh;
+    width: 33%;
+    padding-top: 6vh;
+  } */
+
+mat-grid-list {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+mat-grid-tile {
+  background: #f2f2e9;
+  border-radius: 4px;
+}
+
+mat-grid-tile:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.get-moving-image {
+  background-image: url("../../assets/img/run.svg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.exercise-image {
+  background-image: url("../../assets/img/exercise.jpg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.eat-image {
+  background-image: url("../../assets/img/eat.jpg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.smoking-image {
+  background-image: url("../../assets/img/smoking.png");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.weight-image {
+  background-image: url("../../assets/img/weight.jpg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.sleep-image {
+  background-image: url("../../assets/img/sleep.jpg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.bp-image {
+  background-image: url("../../assets/img/bp.png");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+.stress-image {
+  background-image: url("../../assets/img/stress.jpg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+.overeat-image {
+  background-image: url("../../assets/img/fastfood.png");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+.title {
+  font-family: "Ramabhadra", sans-serif;
+  font-size: 1vw;
+  margin-top: 2vh;
+}
+
+.subtitle {
+  font-size: 0.9vw;
+}
+
+.content {
+  font-size: 0.9vw;
+  line-height: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    font-size: 1vw;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    font-size: 1vw;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.2vw;
+    line-height: 1.5;
+  }
+  .subtitle {
+    font-size: 1vw;
+    line-height: 1.5;
+  }
+  .content {
+    font-size: 1.3vw;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    font-size: 1.3vw;
+    line-height: 2;
+  }
+}

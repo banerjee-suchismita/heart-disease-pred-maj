@@ -1,0 +1,51 @@
+<!--Header Images-->
+<div class="image-holder">
+  <img src="../../assets/img/heart-with-grass-green.svg" class="header-image" />
+  <img src="../../assets/img/header.svg" class="header-image" />
+  <img src="../../assets/img/wellness-green.svg" class="header-image" />
+</div>
+
+<!--Grid for two cards-->
+<mat-grid-list cols="2" rowHeight="25vh" [gutterSize]="'5vw'">
+  <!--Upload File Card-->
+  <mat-grid-tile class="mat-elevation-z2">
+    <mat-card class="card" (click)="openDialog()">
+      <mat-card-header>
+        <div mat-card-avatar class="file-upload-image"></div>
+        <mat-card-title class="title">UPLOAD YOUR HEALTH REPORT</mat-card-title>
+        <mat-card-subtitle class="subtitle"
+          >Format supported : .csv</mat-card-subtitle
+        >
+      </mat-card-header>
+      <mat-card-content class="content">
+        <p>
+          Upload your health check-up here to get instantaneous predictions on
+          the probability of you being affected by a heart disease. Please
+          ensure that the report is in a .csv format and all the data is present
+          in the correct format.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <!--Input Values Card-->
+  <mat-grid-tile class="mat-elevation-z2">
+    <mat-card class="card" routerLink="/user-details">
+      <mat-card-header>
+        <div mat-card-avatar class="form-fill-image"></div>
+        <mat-card-title class="title"
+          >FILL OUT SOME VALUES, MANUALLY</mat-card-title
+        >
+        <mat-card-subtitle class="subtitle">Go manual!</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="content">
+        <p>
+          In case you don't have the report in the needed file format, we have
+          you covered. You can click here and take some time to manually provide
+          us the information from your report. We will help you determine your
+          heart's condition.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

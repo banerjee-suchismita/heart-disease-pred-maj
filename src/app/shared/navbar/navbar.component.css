@@ -1,0 +1,76 @@
+.mat-toolbar {
+  height: 8vh;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  position: relative;
+}
+
+.mat-toolbar.mat-primary {
+  background-color: black;
+}
+
+.logo {
+  /* margin: 10px 0; */
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  font-family: "Ramabhadra", sans-serif;
+  font-size: 90%;
+  cursor: pointer;
+  margin-top: 6px;
+  text-decoration: none;
+}
+
+.heart-header-icon {
+  height: 50%;
+  color: white;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+div {
+  overflow: inherit;
+}
+
+.mat-sidenav-container {
+  min-height: 93vh !important;
+}
+
+a {
+  text-decoration: none;
+  font-size: 70%;
+  white-space: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+  color: gray;
+}
+
+button {
+  min-width: min-content;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+@media screen and (max-width: 945px) {
+  .header {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .sidenav-text {
+    font-size: 70%;
+  }
+}

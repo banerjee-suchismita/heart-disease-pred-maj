@@ -1,0 +1,14 @@
+<h1 mat-dialog-title class="title">UPLOAD A FILE</h1>
+<div mat-dialog-content>
+  Upload your file here. Formats supported are .csv, .xlsx.
+</div>
+<div mat-dialog-actions>
+  <label for="file-upload" class="custom-file-upload"> Upload </label>
+  <input
+    id="file-upload"
+    type="file"
+    accept=".csv"
+    (change)="uploadListener($event)"
+  />
+  <label mat-dialog-close class="custom-file-upload"> Close </label>
+</div>

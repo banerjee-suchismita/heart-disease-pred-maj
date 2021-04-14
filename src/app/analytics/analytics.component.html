@@ -1,0 +1,14 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+        <mat-nav-list>
+
+            <a *ngFor="let chart of chartTypes" (click)="renderChart(chart)" mat-list-item class="chartIndex">
+                <span style=" white-space: normal;" subheading-2 mat-line><b>{{chart.heading}}</b></span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-chart [chartType]="chartType" [name]="name"></app-chart>
+        
+    </mat-sidenav-content>
+</mat-sidenav-container>

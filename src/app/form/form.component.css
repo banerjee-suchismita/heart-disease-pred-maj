@@ -1,0 +1,118 @@
+.container {
+  height: 88vh;
+  width: 100vw;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.form-group {
+  background: #212121;
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.49);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.49);
+  box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.49);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  background-color: #0dbd9f;
+  text-align: center;
+  transition: all 0.2s;
+  width: 100%;
+  margin-top: 5vh;
+  font-family: "Ramabhadra", sans-serif;
+}
+
+.button:hover {
+  background-color: #0a7c69;
+}
+
+.form-img {
+  height: 20vh;
+}
+
+.form-element {
+  height: 11vh;
+  width: 250px;
+  display: block;
+  color: #0dbd9f !important;
+  font-family: "Ramabhadra", sans-serif;
+  font-size: small;
+}
+
+.form {
+  margin-top: 2vh;
+}
+
+::ng-deep .mat-form-field .mat-form-field-flex {
+  background: #fafafa;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #0dbd9f !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #0dbd9f !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #0dbd9f !important;
+}
+
+::ng-deep .mat-select-arrow {
+  color: #0dbd9f;
+}
+
+.error {
+  font-family: "Ramabhadra", sans-serif;
+  color: red;
+  text-align: center;
+}
+
+@media all and (max-width: 30em) {
+   .button {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form-element {
+    width: 200px;
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-element {
+    width: 150px;
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-element {
+    width: 100px;
+    font-size: 5px;
+  }
+}
+
+/* @media screen and (max-width: 300px) {
+  .form-element {
+    width: 60px;
+    font-size: 1px;
+  }
+} */

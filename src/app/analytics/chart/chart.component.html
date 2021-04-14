@@ -1,0 +1,37 @@
+<div style="display: flex;flex-direction: column;">
+  <div style="display: block; margin-top: 4vh;margin-left:5vw;">
+    <ngx-charts-bar-vertical-2d *ngIf="chartType==='age-target'" [view]="view" [scheme]="colorScheme1" [results]="pair1"
+      [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" xAxisLabel="Age" yAxisLabel="Count"
+      [showGridLines]="showGridLines" [showDataLabel]="showDataLabel">
+    </ngx-charts-bar-vertical-2d>
+
+    <ngx-charts-bar-vertical-2d *ngIf="chartType==='sex-target'" [view]="view" [scheme]="colorScheme2" [results]="pair2"
+      [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" xAxisLabel="Sex" yAxisLabel="Count"
+      [showGridLines]="showGridLines" [showDataLabel]="showDataLabel">
+    </ngx-charts-bar-vertical-2d>
+
+    <ngx-charts-bar-vertical-2d *ngIf="chartType==='cp-target'" [view]="view" [scheme]="colorScheme3" [results]="pair3"
+      [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" xAxisLabel="Chest Pain" yAxisLabel="Count"
+      [showGridLines]="showGridLines" [showDataLabel]="showDataLabel">
+    </ngx-charts-bar-vertical-2d>
+    <ngx-charts-bar-vertical-2d *ngIf="chartType==='fbs-target'" [view]="view" [scheme]="colorScheme4" [results]="pair4"
+      [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" xAxisLabel="Fasting Blood Sugar (mg/dl)"
+      yAxisLabel="Count" [showGridLines]="showGridLines" [showDataLabel]="showDataLabel">
+    </ngx-charts-bar-vertical-2d>
+    <ngx-charts-bar-vertical-2d *ngIf="chartType==='slope-target'" [view]="view" [scheme]="colorScheme5"
+      [results]="pair5" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" xAxisLabel="Slope" yAxisLabel="Count"
+      [showGridLines]="showGridLines" [showDataLabel]="showDataLabel">
+    </ngx-charts-bar-vertical-2d>
+
+
+  </div>
+  <div style="padding: 7px; text-align: center;">
+    <h3><b>{{name}}</b></h3>
+  </div>
+
+</div>

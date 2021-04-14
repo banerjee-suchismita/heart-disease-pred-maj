@@ -1,0 +1,107 @@
+.image-holder {
+  width: 100%;
+  height: 50vh;
+  background-color: whitesmoke;
+  margin-bottom: 5vh;
+}
+
+.header-image {
+  height: 48vh;
+  width: 33%;
+  padding-top: 2vh;
+}
+
+/* .header-image-exp {
+  height: 44vh;
+  width: 33%;
+  padding-top: 6vh;
+} */
+
+mat-grid-list {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+mat-grid-tile {
+  background: #f2f2e9;
+  border-radius: 4px;
+}
+
+mat-grid-tile:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.75);
+}
+
+.mat-grid-tile:hover {
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.file-upload-image {
+  background-image: url("../../assets/img/file-upload.svg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.form-fill-image {
+  background-image: url("../../assets/img/form.svg");
+  background-size: cover;
+  margin-top: 1.1vh;
+}
+
+.title {
+  font-family: "Ramabhadra", sans-serif;
+  font-size: 1vw;
+  margin-top: 1.1vh;
+}
+
+.subtitle {
+  font-size: 0.9vw;
+}
+
+.content {
+  font-size: 0.9vw;
+  line-height: 2;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    font-size: 1vw;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    font-size: 1vw;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 1.2vw;
+    line-height: 1.5;
+  }
+  .subtitle {
+    font-size: 1vw;
+    line-height: 1.5;
+  }
+  .content {
+    font-size: 1.3vw;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    font-size: 1.3vw;
+    line-height: 2;
+  }
+}

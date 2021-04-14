@@ -1,0 +1,67 @@
+<div class="container-wrap">
+  <img class="container-bg" src="../../assets/img/form-background.svg" />
+  <div class="content">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, expedita
+      illum. Voluptates, qui! Unde impedit sint nam repellendus dolor aut
+      quibusdam tenetur, expedita consequatur numquam, quis animi, quod
+      reprehenderit architecto. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Beatae, expedita illum. Voluptates, qui! Unde impedit
+      sint nam repellendus dolor aut quibusdam tenetur, expedita consequatur
+      numquam, quis animi, quod reprehenderit architecto. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Beatae, expedita illum. Voluptates,
+      qui! Unde impedit sint nam repellendus dolor aut quibusdam tenetur,
+      expedita consequatur numquam, quis animi, quod reprehenderit architecto.
+    </p>
+
+    <h2 class="dataset">Data Set Information</h2>
+    <p>
+      This database is taken from the UCI Machine Learning repository. In
+      particular, the Cleveland database is the only one that has been used by
+      ML researchers to this date.
+    </p>
+
+    <h3 class="dataset">Creators</h3>
+    <p>
+      1. Hungarian Institute of Cardiology. Budapest: Andras Janosi, M.D. <br />
+      2. University Hospital, Zurich, Switzerland: William Steinbrunn, M.D.
+      <br />
+      3. University Hospital, Basel, Switzerland: Matthias Pfisterer, M.D.
+      <br />
+      4. V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert
+      Detrano, M.D., Ph.D.
+    </p>
+
+    <h3 class="dataset">Attributes</h3>
+
+    <!-- Attribute Table -->
+    <div class="table-container">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+        </ng-container>
+
+        <!-- Description Column -->
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef>Description</th>
+          <td mat-cell *matCellDef="let element">{{ element.description }}</td>
+        </ng-container>
+
+        <tr
+          mat-header-row
+          *matHeaderRowDef="displayedColumns; sticky: true"
+        ></tr>
+        <tr
+          mat-row
+          *matRowDef="let row; columns: displayedColumns; let even = even"
+        ></tr>
+      </table>
+    </div>
+
+    <br />
+    <h2 class="dataset">Machine Learning Model</h2>
+    <br /><br />
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div>
+  <!--toolbar-->
+  <mat-toolbar color="primary">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a routerLink="/home" class="logo"
+      ><img class="heart-header-icon" src="../../assets/img/heart-icon.svg" />
+      <span class="header">HEART DISEASE PREDICTION</span></a
+    >
+    <span class="spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button routerLink="/home">Home</a>
+      <a mat-button routerLink="/analytics">Analytics</a>
+      <a mat-button routerLink="/about">About us</a>
+    </div>
+  </mat-toolbar>
+
+  <!--sidenav-->
+  <mat-sidenav-container fxFlexFill class="container">
+    <mat-sidenav
+      color="primary"
+      #sidenav
+      fxLayout="column"
+      mode="over"
+      opened="false"
+      fxHide.gt-sm="true"
+    >
+      <div fxLayout="column" class="sidenav-content">
+        <mat-nav-list>
+          <a mat-list-item (click)="sidenav.close()" routerLink="/home">
+            <mat-icon matListIcon>home</mat-icon>
+            <span class="sidenav-text">Home</span>
+          </a>
+          <a mat-list-item (click)="sidenav.close()" routerLink="/analytics">
+            <mat-icon matListIcon>analytics</mat-icon>
+            <span class="sidenav-text">Analytics</span>
+          </a>
+          <a mat-list-item (click)="sidenav.close()" routerLink="/about">
+            <mat-icon matListIcon>home</mat-icon>
+            <span class="sidenav-text">About us</span>
+          </a>
+        </mat-nav-list>
+      </div>
+    </mat-sidenav>
+    <!--injecting content here-->
+    <ng-content></ng-content>
+  </mat-sidenav-container>
+</div>

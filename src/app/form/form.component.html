@@ -1,0 +1,176 @@
+<div class="container">
+  <!-- Forms -->
+  <mat-grid-list cols="3" rowHeight="60vh" class="form-group">
+    <!-- Form 01 -->
+    <mat-grid-tile>
+      <form class="form">
+        <!-- Age | age -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Age</mat-label>
+          <input
+            required
+            matInput
+            [(ngModel)]="age"
+            name="age"
+            #ageControl="ngModel"
+          />
+        </mat-form-field>
+
+        <!-- Sex | sex -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Sex</mat-label>
+          <mat-select [(value)]="sex" required name="sex">
+            <mat-option value="1">Male</mat-option>
+            <mat-option value="0">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Chest Pain Type | cp -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Chest Pain Type</mat-label>
+          <mat-select [(value)]="cp" required name="cp">
+            <mat-option value="0">Typical Angina</mat-option>
+            <mat-option value="1">Atypical Angina</mat-option>
+            <mat-option value="2">Non-anginal Pain</mat-option>
+            <mat-option value="3">Asymptomatic</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Resting Blood Pressure | trestbps -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Resting Blood Pressure (mm Hg)</mat-label>
+          <input
+            required
+            matInput
+            [(ngModel)]="trestbps"
+            name="trestbps"
+            #trestbpsControl="ngModel"
+          />
+        </mat-form-field>
+      </form>
+    </mat-grid-tile>
+
+    <!-- Form 02 -->
+    <mat-grid-tile>
+      <form class="form">
+        <!-- Serum Cholestoral | chol -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Serum Cholestoral (mg/dl)</mat-label>
+          <input
+            required
+            matInput
+            [(ngModel)]="chol"
+            name="chol"
+            #cholControl="ngModel"
+          />
+        </mat-form-field>
+
+        <!--Fasting Blood Sugar | fbs -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Fasting Blood Sugar (mg/dl)</mat-label>
+          <mat-select [(value)]="fbs" required name="fbs">
+            <mat-option value="0">Greater then 120 mg/dl</mat-option>
+            <mat-option value="1">Less than 120 mg/dl</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Resting Electrocardiograph | restecg -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Resting Electrocardiograph</mat-label>
+          <mat-select [(value)]="restecg" required name="restecg">
+            <mat-option value="0">Normal</mat-option>
+            <mat-option value="1">ST-T Wave Abnormality</mat-option>
+            <mat-option value="2">Left Ventricular Hypertrophy</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Maximum Heart Rate | thalach -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Maximum Heart Rate</mat-label>
+          <input
+            required
+            matInput
+            [(ngModel)]="thalach"
+            name="thalach"
+            #thalachControl="ngModel"
+          />
+        </mat-form-field>
+
+        <!-- Thal | thal -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Thalassemia</mat-label>
+          <mat-select [(value)]="thal" required name="thal">
+            <mat-option value="1">Normal</mat-option>
+            <mat-option value="2">Fixed Defect</mat-option>
+            <mat-option value="3">Reversable Defect</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </mat-grid-tile>
+
+    <!-- Form 03 -->
+    <mat-grid-tile>
+      <form class="form">
+        <!-- Exercise Induced Angina | exang -->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Exercise Induced Angina</mat-label>
+          <mat-select [(value)]="exang" required>
+            <mat-option value="0">Yes</mat-option>
+            <mat-option value="1">No</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- ST Depression Induced By Exercise | oldpeak-->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>ST Depression Induced By Exercise</mat-label>
+          <input
+            required
+            matInput
+            [(ngModel)]="oldpeak"
+            name="oldpeak"
+            #oldpeakControl="ngModel"
+          />
+        </mat-form-field>
+
+        <!-- Slope Of Peak Exercise ST | slope-->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Slope Of Peak Exercise ST</mat-label>
+          <mat-select [(value)]="slope" required name="slope">
+            <mat-option value="0">Unsloping</mat-option>
+            <mat-option value="1">Flat</mat-option>
+            <mat-option value="2">Downsloping</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <!-- Major Vessels | ca-->
+        <mat-form-field appearance="fill" class="form-element">
+          <mat-label>Vessels Colored (flourosopy)</mat-label>
+          <mat-select [(value)]="ca" required name="ca">
+            <mat-option value="0">0</mat-option>
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <!-- Form Submit Section-->
+  <mat-grid-list cols="3" rowHeight="26vh" class="form-submit">
+    <mat-grid-tile>
+      <img src="../../assets/img/form-img-01.svg" class="form-img" />
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <div>
+        <div *ngIf="error" class="error">Please fill out all the values!</div>
+        <a class="button" (click)="onSubmit()">CHECK YOUR RESULTS HERE</a>
+      </div></mat-grid-tile
+    >
+
+    <mat-grid-tile>
+      <img src="../../assets/img/form-img-02.svg" class="form-img" />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
